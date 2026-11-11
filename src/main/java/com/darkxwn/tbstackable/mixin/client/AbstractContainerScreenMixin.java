@@ -33,7 +33,10 @@ public abstract class AbstractContainerScreenMixin<T extends AbstractContainerMe
         g.fill(slot.x, slot.y, slot.x + 16, slot.y + 16, OverflowHighlight.color());
     }
 
-    @Inject(method = "slotClicked", at = @At("HEAD"))
+    @Inject(
+        method = "slotClicked(Lnet/minecraft/world/inventory/Slot;IILnet/minecraft/world/inventory/ContainerInput;)V",
+        at = @At("HEAD")
+    )
     private void tbstackable$onSlotClicked(Slot slot, int slotId, int mouseButton, ContainerInput clickType, CallbackInfo ci) {
         if (!(slot instanceof UpgradeLockableSlotItemHandler upgradeSlot)) return;
         ItemStack inSlot = upgradeSlot.getItem();
