@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tbstackable:item/iron_stack_upgrade"
+  }
+}

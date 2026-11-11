@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tbstackable:item/netherite_stack_upgrade"
+  }
+}

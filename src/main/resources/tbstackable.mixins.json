@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.darkxwn.tbstackable.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BackpackWrapperMixin",
+    "ContainerContentsHelperMixin",
+    "ItemStackHandlerMixin",
+    "UpgradeLockableSlotItemHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "client.AbstractContainerScreenMixin",
+    "client.BackpackTooltipComponentMixin",
+    "client.GuiGraphicsExtractorMixin"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "item.tbstackable.wood_stack_upgrade": "Деревянное улучшение хранения",
+  "item.tbstackable.copper_stack_upgrade": "Медное улучшение хранения",
+  "item.tbstackable.iron_stack_upgrade": "Железное улучшение хранения",
+  "item.tbstackable.gold_stack_upgrade": "Золотое улучшение хранения",
+  "item.tbstackable.diamond_stack_upgrade": "Алмазное улучшение хранения",
+  "item.tbstackable.netherite_stack_upgrade": "Незеритовое улучшение хранения",
+  "item.tbstackable.stack_upgrade_tooltip": "Размер стаков в хранилище рюкзака ×%s",
+  "screen.tbstackable.stack_upgrade": "Улучшение хранения",
+  "tbstackable.count.thousands": "к",
+  "tbstackable.count.millions": "М"
+}

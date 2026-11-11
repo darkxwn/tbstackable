@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tbstackable:item/gold_stack_upgrade"
+  }
+}

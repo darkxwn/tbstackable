@@ -1,0 +1,12 @@
+{
+  "item.tbstackable.wood_stack_upgrade": "Wood Storage Upgrade",
+  "item.tbstackable.copper_stack_upgrade": "Copper Storage Upgrade",
+  "item.tbstackable.iron_stack_upgrade": "Iron Storage Upgrade",
+  "item.tbstackable.gold_stack_upgrade": "Gold Storage Upgrade",
+  "item.tbstackable.diamond_stack_upgrade": "Diamond Storage Upgrade",
+  "item.tbstackable.netherite_stack_upgrade": "Netherite Storage Upgrade",
+  "item.tbstackable.stack_upgrade_tooltip": "Stack size in backpack storage ×%s",
+  "screen.tbstackable.stack_upgrade": "Storage Upgrade",
+  "tbstackable.count.thousands": "k",
+  "tbstackable.count.millions": "M"
+}

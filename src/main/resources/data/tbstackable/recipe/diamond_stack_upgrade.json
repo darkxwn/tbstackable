@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": "#c:gems/diamond",
+    "K": "#c:storage_blocks/diamond",
+    "U": "tbstackable:gold_stack_upgrade"
+  },
+  "pattern": [
+    "III",
+    "IUI",
+    "KIK"
+  ],
+  "result": {
+    "id": "tbstackable:diamond_stack_upgrade"
+  }
+}

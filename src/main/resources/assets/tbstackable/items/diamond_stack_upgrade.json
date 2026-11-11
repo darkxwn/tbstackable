@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tbstackable:item/diamond_stack_upgrade"
+  }
+}

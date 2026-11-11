@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": "#c:ingots/iron",
+    "K": "#c:storage_blocks/iron",
+    "U": "tbstackable:copper_stack_upgrade"
+  },
+  "pattern": [
+    " I ",
+    "IUI",
+    " K "
+  ],
+  "result": {
+    "id": "tbstackable:iron_stack_upgrade"
+  }
+}

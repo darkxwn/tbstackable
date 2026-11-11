@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "tbstackable",
+  "version": "${version}",
+  "name": "Travelers Backpacks: Stackable",
+  "description": "Stack size upgrades for Traveler's Backpack: wood x1.5, copper x2, iron x4, gold x6, diamond x8, netherite x16.",
+  "authors": [
+    "darkxwn"
+  ],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/tbstackable/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.darkxwn.tbstackable.TBStackable"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "fabric-api": "*",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "travelersbackpack": ">=11.4.1"
+  },
+  "mixins": [
+    "tbstackable.mixins.json"
+  ]
+}

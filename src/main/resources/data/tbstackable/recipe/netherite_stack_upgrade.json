@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": "#c:ingots/netherite",
+    "K": "#c:storage_blocks/netherite",
+    "U": "tbstackable:diamond_stack_upgrade"
+  },
+  "pattern": [
+    "III",
+    "IUI",
+    "KIK"
+  ],
+  "result": {
+    "id": "tbstackable:netherite_stack_upgrade"
+  }
+}

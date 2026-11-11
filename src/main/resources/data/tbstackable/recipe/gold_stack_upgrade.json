@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": "#c:ingots/gold",
+    "K": "#c:storage_blocks/gold",
+    "U": "tbstackable:iron_stack_upgrade"
+  },
+  "pattern": [
+    "III",
+    "IUI",
+    "KIK"
+  ],
+  "result": {
+    "id": "tbstackable:gold_stack_upgrade"
+  }
+}
