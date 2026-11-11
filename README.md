@@ -16,7 +16,9 @@ A Fabric addon for **Traveler's Backpack** that adds stack size upgrades for bac
   * 💎 **Diamond**: ×8 (up to 512)
   * 🌌 **Netherite**: ×16 (up to 1024)
 * **Overflow Protection**: You cannot downgrade or remove an upgrade if the backpack holds more items than the target tier allows. Slots that would overflow are highlighted in red.
-* **Convenient Quick Move**: Shift-clicking a slot transfers one standard stack (e.g., 64) at a time instead of dumping the entire large stack.
+* **Convenient Quick Move & Drop**:
+  * **Shift-click**: transfers one standard stack (up to 64) at a time instead of dumping the entire large stack.
+  * **Shift + Q**: drops one standard stack (or remainder) at a time, while regular `Q` drops 1 item and `Ctrl + Q` drops the entire slot contents.
 * **Stackable Upgrades**: Upgrades stack up to 16 in player inventories and chests.
 
 ### Requirements
@@ -40,7 +42,9 @@ A Fabric addon for **Traveler's Backpack** that adds stack size upgrades for bac
   * 💎 **Алмазное**: ×8 (до 512)
   * 🌌 **Незеритовое**: ×16 (до 1024)
 * **Защита от переполнения**: нельзя снять или заменить улучшение на более слабое, если в рюкзаке лежит больше предметов, чем допускает новый тир (переполненные слоты подсвечиваются красным).
-* **Удобный Shift-клик**: за одно нажатие с Shift в инвентарь перемещается 1 стандартный стак (до 64 шт.), а не все сотни предметов сразу.
+* **Удобные перемещение и выброс**:
+  * **Shift-клик**: перемещает в инвентарь по 1 стандартному стаку (до 64 шт.) за раз, а не все сотни предметов сразу.
+  * **Shift + Q**: выбрасывает 1 стандартный стак (или остаток), в то время как обычный `Q` выбрасывает 1 шт., а `Ctrl + Q` — весь слот целиком.
 * **Стакаемость улучшений**: сами улучшения складываются в стаки до 16 штук.
 
 ### Требования
