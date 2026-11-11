@@ -20,6 +20,10 @@ dependencies {
 	implementation files("libs/travelersbackpack-fabric-26.3-11.4.3.jar")
 }
 
+base {
+	archivesName = "tbstackable-fabric-${project.minecraft_version}"
+}
+
 processResources {
 	def version = project.version
 	inputs.property "version", version

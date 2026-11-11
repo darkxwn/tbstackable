@@ -21,6 +21,9 @@ public abstract class UpgradeLockableSlotItemHandlerMixin {
     @Shadow
     public BackpackBaseMenu menu;
 
+    @Shadow
+    public boolean isHidden;
+
     @Inject(method = "mayPickup", at = @At("HEAD"), cancellable = true)
     private void tbstackable$lockRemoval(Player player, CallbackInfoReturnable<Boolean> cir) {
         ItemStack inSlot = ((SlotItemHandler) (Object) this).getItem();
@@ -36,6 +39,16 @@ public abstract class UpgradeLockableSlotItemHandlerMixin {
                 OverflowHighlight.trigger(replacement);
             }
             cir.setReturnValue(false);
+        } else {
+            cir.setReturnValue(!this.isHidden);
+        }
+    }
+
+    @Inject(method = "isActive", at = @At("HEAD"), cancellable = true)
+    private void tbstackable$isActive(CallbackInfoReturnable<Boolean> cir) {
+        ItemStack inSlot = ((SlotItemHandler) (Object) this).getItem();
+        if (inSlot.getItem() instanceof StackUpgradeItem) {
+            cir.setReturnValue(!this.isHidden);
         }
     }
 }

@@ -6,8 +6,11 @@
   "mixins": [
     "BackpackWrapperMixin",
     "ContainerContentsHelperMixin",
+    "ContainerSorterMixin",
     "ItemStackHandlerMixin",
-    "UpgradeLockableSlotItemHandlerMixin"
+    "SlotItemHandlerMixin",
+    "UpgradeLockableSlotItemHandlerMixin",
+    "UpgradeManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

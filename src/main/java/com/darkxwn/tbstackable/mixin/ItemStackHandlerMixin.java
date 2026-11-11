@@ -28,6 +28,11 @@ public abstract class ItemStackHandlerMixin implements StackLimitHolder {
         this.tbstackable$wrapper = wrapper;
     }
 
+    @Override
+    public BackpackWrapper tbstackable$getWrapper() {
+        return this.tbstackable$wrapper;
+    }
+
     @Inject(method = "getStackLimit", at = @At("HEAD"), cancellable = true)
     private void tbstackable$stackLimit(int slot, ItemStack stack, CallbackInfoReturnable<Integer> cir) {
         if (tbstackable$wrapper == null) return;
