@@ -20,7 +20,7 @@ public class StackUpgradeItem extends UpgradeItem {
     private final StackTier tier;
 
     public StackUpgradeItem(Item.Properties properties, StackTier tier) {
-        super(properties, tier.itemName());
+        super(properties, null);
         this.tier = tier;
     }
 
@@ -32,7 +32,8 @@ public class StackUpgradeItem extends UpgradeItem {
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, TooltipDisplay display,
                                 Consumer<Component> consumer, TooltipFlag flag) {
         consumer.accept(Component.translatable("item.tbstackable.stack_upgrade_tooltip", tier.multiplierText())
-                .withStyle(ChatFormatting.GRAY));
+                .withStyle(ChatFormatting.BLUE));
+        consumer.accept(Component.translatable("item.travelersbackpack.upgrade_apply_tooltip"));
     }
 
     @Override
