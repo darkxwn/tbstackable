@@ -4,6 +4,7 @@
   "package": "com.darkxwn.tbstackable.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "BackpackBaseMenuMixin",
     "BackpackWrapperMixin",
     "ContainerContentsHelperMixin",
     "ContainerSorterMixin",
