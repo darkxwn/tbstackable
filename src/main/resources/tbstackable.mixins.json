@@ -10,6 +10,7 @@
     "ContainerSorterMixin",
     "ItemStackHandlerMixin",
     "SlotItemHandlerMixin",
+    "ToolSlotItemHandlerMixin",
     "UpgradeLockableSlotItemHandlerMixin",
     "UpgradeManagerMixin"
   ],

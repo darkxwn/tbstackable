@@ -22,7 +22,7 @@ public class ModItems {
         for (StackTier tier : StackTier.values()) {
             Identifier id = Identifier.fromNamespaceAndPath(TBStackable.MOD_ID, tier.itemName());
             ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, id);
-            StackUpgradeItem item = new StackUpgradeItem(new Item.Properties().stacksTo(1).setId(key), tier);
+            StackUpgradeItem item = new StackUpgradeItem(new Item.Properties().stacksTo(16).setId(key), tier);
             Registry.register(BuiltInRegistries.ITEM, id, item);
             STACK_UPGRADES.put(tier, item);
         }

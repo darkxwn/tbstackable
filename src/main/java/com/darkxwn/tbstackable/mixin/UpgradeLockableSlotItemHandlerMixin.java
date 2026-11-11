@@ -2,7 +2,6 @@ package com.darkxwn.tbstackable.mixin;
 
 import com.darkxwn.tbstackable.StackTier;
 import com.darkxwn.tbstackable.item.StackUpgradeItem;
-import com.darkxwn.tbstackable.util.OverflowHighlight;
 import com.darkxwn.tbstackable.util.StackLimits;
 import com.tiviacz.travelersbackpack.inventory.menu.BackpackBaseMenu;
 import com.tiviacz.travelersbackpack.inventory.menu.slot.SlotItemHandler;
@@ -34,10 +33,6 @@ public abstract class UpgradeLockableSlotItemHandlerMixin {
         StackTier replacement = carried.getItem() instanceof StackUpgradeItem other ? other.getTier() : null;
 
         if (StackLimits.wouldOverflow(menu.getWrapper(), replacement)) {
-            // Вместо сообщения: на клиенте подсвечиваем слоты, которые нужно разгрузить
-            if (player.level().isClientSide()) {
-                OverflowHighlight.trigger(replacement);
-            }
             cir.setReturnValue(false);
         } else {
             cir.setReturnValue(!this.isHidden);
