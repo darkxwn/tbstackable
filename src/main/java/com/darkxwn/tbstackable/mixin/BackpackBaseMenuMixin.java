@@ -1,6 +1,7 @@
 package com.darkxwn.tbstackable.mixin;
 
 import com.tiviacz.travelersbackpack.inventory.menu.BackpackBaseMenu;
+import net.minecraft.util.Prediction;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerInput;
@@ -69,7 +70,8 @@ public abstract class BackpackBaseMenuMixin extends AbstractContainerMenu {
                     int maxToDrop = Math.min(inSlot.getCount(), inSlot.getMaxStackSize());
                     if (maxToDrop > 0) {
                         ItemStack dropped = slot.safeTake(maxToDrop, Integer.MAX_VALUE, player);
-                        player.drop(dropped, true);
+                        player.drop(dropped, true, Prediction.PREDICTED);
+                        player.handleCreativeModeItemDrop(dropped);
                         ci.cancel();
                     }
                 }
