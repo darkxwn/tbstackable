@@ -22,7 +22,6 @@ A Fabric addon for **Traveler's Backpack** that adds stack size upgrades for bac
 * **Stackable Upgrades**: Upgrades stack up to 16 in player inventories and chests.
 
 ### Requirements
-* [Fabric Loader](https://fabricmc.net/)
 * [Fabric API](https://modrinth.com/mod/fabric-api)
 * [Traveler's Backpack (Fabric)](https://modrinth.com/mod/travelersbackpack)
 
@@ -48,6 +47,5 @@ A Fabric addon for **Traveler's Backpack** that adds stack size upgrades for bac
 * **Стакаемость улучшений**: сами улучшения складываются в стаки до 16 штук.
 
 ### Требования
-* [Fabric Loader](https://fabricmc.net/)
 * [Fabric API](https://modrinth.com/mod/fabric-api)
 * [Traveler's Backpack (Fabric)](https://modrinth.com/mod/travelersbackpack)
